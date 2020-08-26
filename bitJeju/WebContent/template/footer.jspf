@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<div id="footer">
+		<div>
+			<img alt="" src="<%=root %>/img/footer-logo.png" width="170px" />
+			<p align="center">제주시 애월읍 ㅣ 문의 : 064-123-4567<br/>
+			(주)비트컴퓨터 제주지점 대표: 조현정<br/>
+			Copyright &copy; 비트캠프 All rights reserved.<br/><br/>
+			</p>
+		</div>
+	</div>

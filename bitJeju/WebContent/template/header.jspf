@@ -1,0 +1,109 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<script type="text/javascript">
+
+	function menuDown0() { // 메인 비트캠프 소개
+		$('.nav li').eq(0).mouseover(function() {
+			$(this).find('ol').stop().slideDown(200);
+		});
+	}
+
+	function menuUp0() { // 메인 비트캠프 소개
+		$('.nav li').eq(0).mouseleave(function() {
+			$(this).find('ol').stop().slideUp(200);
+		});
+	}
+	
+	function menuDown1() { // 메인 교육과정
+		$('.nav li').eq(1).mouseover(function() {
+			$(this).find('ol').stop().slideDown(200);
+		});
+	}
+
+	function menuUp1() { // 메인 교육과정
+		$('.nav li').eq(1).mouseleave(function() {
+			$(this).find('ol').stop().slideUp(200);
+		});
+	}
+	
+	
+	function menuDown2() { // 메인 취업지원센터
+		$('.nav li').eq(2).mouseover(function() {
+			$(this).find('ol').stop().slideDown(200);
+		});
+	}
+
+	function menuUp2() { // 메인 취업지원센터
+		$('.nav li').eq(2).mouseleave(function() {
+			$(this).find('ol').stop().slideUp(200);
+		});
+	}
+
+	$(document).ready(function() {
+		
+		menuDown0();
+		menuUp0();
+		
+		menuDown1();
+		menuUp1();
+		
+		menuDown2();
+		menuUp2();
+	});
+</script>
+<!--수정 -->
+	<div id="header">
+		<div id="logo">
+			<a href="index.jb"><img src="<%=root%>/img/logo.png" width="250"></a>
+		</div>
+		<div>
+			<ul class="nav">
+						<li class="topmenu">비트캠프 소개
+							<ol>
+								<a href="desc.jb">소개</a>
+							</ol>
+							<ol>
+								<a href="instructor.jb">강사진</a>
+							</ol>
+							<ol>
+								<a href="map.jb">찾아오시는 길</a>
+							</ol>
+						</li>
+						
+						<li>교육과정
+							<ol>
+								<a href="subList.jb">국비지원과정</a>
+							</ol>
+						</li>
+				
+						<li>취업지원센터
+							<ol>
+								<a href="stuEmploy.jb">학생 취업 현황</a>
+							</ol>
+							<ol>
+								<a href="jobNoticeList.jb">채용 공고</a>
+							</ol>
+						</li>
+				
+						<li><a href="noticeList.jb">공지사항</a></li>
+	
+						<c:if test="${level eq null}">
+							<li><a href="signUp.jb">회원가입</a></li>
+							<li><a href="login.jb">로그인</a></li>
+						</c:if>
+	
+						<c:if test="${level eq 1}">
+							<li><a href="myPage.jb">마이페이지</a></li>
+							<li><a href="logout.jb">로그아웃</a></li>
+						</c:if>
+	
+						<c:if test="${level eq 10}">
+							<li><a href="adminPage.jb">관리자페이지</a></li>
+							<li><a href="logout.jb">로그아웃</a></li>
+						</c:if>
+						
+			</ul>
+	
+		</div>
+	</div>
+<br/><br/><br/><br/><br/>

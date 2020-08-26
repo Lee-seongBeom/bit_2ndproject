@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		
+		$('#box>table>tbody tr th a').eq(0).mouseover(function(){
+			$(this).css({'text-decoration':'underline'});
+		});
+		$('#box>table>tbody tr th a').eq(0).mouseleave(function(){
+			$(this).css({'text-decoration':'none'});
+		});
+		
+		
+		$('#box>table>tbody tr th a').eq(1).mouseover(function(){
+			$(this).css({'text-decoration':'underline'});
+		});
+		$('#box>table>tbody tr th a').eq(1).mouseleave(function(){
+			$(this).css({'text-decoration':'none'});
+		});
+		
+		
+		$('#box>table>tbody tr th a').eq(2).mouseover(function(){
+			$(this).css({'text-decoration':'underline'});
+		});
+		$('#box>table>tbody tr th a').eq(2).mouseleave(function(){
+			$(this).css({'text-decoration':'none'});
+		});
+		
+	});
+
+</script>
+<style type="text/css">
+	
+	h1{
+		text-align: center;
+	}
+	
+	#box{
+		margin-top:-4px;
+		padding-left:30px;
+		float: left;
+		height: 700px;
+		background-color: white;
+		border-right:2px solid black;
+		width: 200px;
+	}
+
+	#box>table{
+		border-right: 5px solid blue;
+		margin-top:96px;	
+		left: 50px;
+		font-size: 20px;
+	}
+	
+	#box>table>tbody tr th{
+		line-height:40px;
+	}
+	#box>table>tbody tr th a{
+		margin-right:10px;
+		color:black;
+		text-decoration: none;	
+	}
+	
+	
+</style>

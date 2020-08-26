@@ -1,0 +1,163 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<style type="text/css">
+	.nav li ol{
+		font-size:20px;
+		margin-left: 55px;
+	}
+	.nav li:nth-child(2) ol{
+		margin-left: 57px;
+	}
+	.nav li:nth-child(4) ol{
+		margin-left: 61px;
+	}
+</style>
+
+<script type="text/javascript">
+
+	function menuDown0() { // 행정
+		$('.nav li').eq(0).mouseover(function() {
+			$(this).find('ol').stop().slideDown(200);
+		});
+	}
+
+	function menuUp0() { // 행정
+		$('.nav li').eq(0).mouseleave(function() {
+			$(this).find('ol').stop().slideUp(200);
+		});
+	}
+	
+	function menuDown1() { // 영업
+		$('.nav li').eq(1).mouseover(function() {
+			$(this).find('ol').stop().slideDown(200);
+		});
+	}
+
+	function menuUp1() { // 영업
+		$('.nav li').eq(1).mouseleave(function() {
+			$(this).find('ol').stop().slideUp(200);
+		});
+	}
+	
+	
+	function menuDown2() { // 취업
+		$('.nav li').eq(2).mouseover(function() {
+			$(this).find('ol').stop().slideDown(200);
+		});
+	}
+
+	function menuUp2() { // 취업
+		$('.nav li').eq(2).mouseleave(function() {
+			$(this).find('ol').stop().slideUp(200);
+		});
+	}
+	function menuDown3() { // 강사
+		$('.nav li').eq(3).mouseover(function() {
+			$(this).find('ol').stop().slideDown(200);
+		});
+	}
+
+	function menuUp3() { // 강사
+		$('.nav li').eq(3).mouseleave(function() {
+			$(this).find('ol').stop().slideUp(200);
+		});
+	}
+
+	$(document).ready(function() {
+		$('#box>table>tbody tr th a').eq(0).mouseover(function(){
+			$(this).css({'background-color':'gray','color':'white'});
+		});
+		$('#box>table>tbody tr th a').eq(0).mouseleave(function(){
+			$(this).css({'background-color':'white','color':'black'});
+		});
+		
+		$('#box>table>tbody tr th a').eq(1).mouseover(function(){
+			$(this).css({'background-color':'gray','color':'white'});
+		});
+		$('#box>table>tbody tr th a').eq(1).mouseleave(function(){
+			$(this).css({'background-color':'white','color':'black'});
+		});
+		
+		$('#box>table>tbody tr th a').eq(2).mouseover(function(){
+			$(this).css({'background-color':'gray','color':'white'});
+		});
+		$('#box>table>tbody tr th a').eq(2).mouseleave(function(){
+			$(this).css({'background-color':'white','color':'black'});
+		});
+		
+		$('#box>table>tbody tr th a').eq(3).mouseover(function(){
+			$(this).css({'background-color':'gray','color':'white'});
+		});
+		$('#box>table>tbody tr th a').eq(3).mouseleave(function(){
+			$(this).css({'background-color':'white','color':'black'});
+		});
+		
+	/* 	<c:if test="${ad eq 11}">
+			menuDown0();
+			menuUp0();
+		</c:if>
+
+		<c:if test="${ad eq 22}">
+			menuDown1();
+			menuUp1();
+		</c:if>
+
+		<c:if test="${ad eq 33}">
+			menuDown2();
+			menuUp2();
+		</c:if>
+		
+		<c:if test="${ad eq 44}">
+			menuDown3();
+			menuUp3();
+		</c:if> */
+			menuDown0();
+			menuUp0();
+
+			menuDown1();
+			menuUp1();
+
+			menuDown2();
+			menuUp2();
+		
+			menuDown3();
+			menuUp3();
+			
+		
+	});
+</script>
+<div id="header">
+		<div id="logo"><a href="index.jsp"><img src="<%=root %>/img/logo.png" width="250" ></a></div>
+		<div>
+     	   <ul class="nav">
+
+			
+				<li>행정팀
+					<ol><a href="adminScoreAllView.jb">성적 관리</a></ol>
+					<ol><a href="adminAttendAllView.jb">출결 관리</a></ol>
+					<ol><a href="classCre.jb">반 개설</a></ol>
+					<ol><a href="endClass.jb">종강</a></ol>
+				</li>
+			
+
+				<li>영업팀
+					<ol><a href="#">모집 배정</a></ol>
+					<ol><a href="stuAssignment.jb">학생 배정</a></ol>
+				</li>
+			
+				
+				<li>취업팀
+					<ol><a href="stuEmploy.jb">학생 취업 관리</a></ol>
+					<ol><a href="jobNoticeList.jb">취업 정보 전달</a></ol>
+				</li>
+				
+
+				<li>강사
+					<ol><a href="attendanceClass.jb">학생 출석 체크</a></ol>
+					<ol><a href="scoreClassView.jb">학생 성적 입력</a></ol>
+				</li> 
+				
+        	</ul>
+		</div> 
+	</div>
+	<br/><br/><br/><br/><br/>
