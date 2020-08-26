@@ -18,7 +18,7 @@
 		padding-top: 2px;
 	}
 	#name, #mark{
-		width:120px; 
+		width:120px;
 	}
 	#num{
 		width: 80px;

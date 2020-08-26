@@ -2,7 +2,7 @@
     <wb-module deploy-name="bitJeju">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="bitJeju_(1)"/>
+        <property name="context-root" value="bitJeju"/>
         <property name="java-output-path" value="/bitJeju/build/classes"/>
     </wb-module>
 </project-modules>
