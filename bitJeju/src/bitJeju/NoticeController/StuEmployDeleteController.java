@@ -28,7 +28,7 @@ public class StuEmployDeleteController extends HttpServlet {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	request.getRequestDispatcher("/stuEmploy.jb").forward(request, response);
+	request.getRequestDispatcher("/stuEmployList.jb").forward(request, response);
 	
 }
 

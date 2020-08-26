@@ -115,23 +115,6 @@
 				<button type = "button" onclick ="location.href='jobNoticeList.jb'">목록</button>
 			</div>
 			</form>
-		<!-- content end -->
-	<%-- </div>
-	<div id="content">
-		<!-- content start -->
-			<form action="jobNoticeModify.jb" method="post">
-					<input type="text" name="title"	value="${bean.title }" />
-					</br>
-					<span>작성자</span><span>${bean.writer }</span>
-					<span>마감일</span><span>${bean.endDay }</span>
-				
-					<textarea type="text" name="contents" class="contents" cols="" rows="" style="resize : none">${bean.contents }</textarea>
-				<button type = "submit">작성</button>
-				<button type = "button" onclick ="location.href='jobNoticeList.jb'">목록</button>
-			</form>
-		<!-- content end -->
-	</div> --%>
-	
 	<%@include file="/template/footer.jspf" %>
 	
 

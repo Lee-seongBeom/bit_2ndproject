@@ -29,7 +29,7 @@
 		text-align:center;
 	}
 	#content>table{
-		width: 800px;
+		width: 300px;
 		margin: 15px auto;
 	}
 	#content>table tr>th{
@@ -46,7 +46,7 @@
         border: 5px solid white; 
 	}
 	#img>#box1{
-		margin-left:40px;
+		margin-left:10px;
 	}
 	#img>img{
 		width: 70px;
@@ -55,18 +55,21 @@
 		margin-bottom: 15px;
 	}
 	#myBox{
-		padding: 15px 20px 70px 20px;
+		padding: 15px 0px 30px 0px;
 		border-radius: 20px;
-		width: 400px;
+		width: 600px;
 		border:1px solid gray;
-		margin: 50px auto;
-		margin-top: 100px;
+		margin: 10px auto;
+		margin-top: 0px;
 	}
 	#content>div>div>span{
 		margin: 45px;
 	}
 	#content>div>span{
 		text-align: center;
+	}
+	#rate {
+		margin-left:30px;
 	}
 </style>
 <script type="text/javascript"src="js/jquery-1.12.4.js"></script>
@@ -80,34 +83,20 @@
 	
 	<div id ="content">
 		<h1>출석 현황</h1>
-		<table>
-			<tr>
-				<th id="hakbun">학생번호</th>
-				<th id="name">이름</th>
-				<th id="clname">과정명</th>
-				<th id="att">출결(%)</th>
-			</tr>
-			<c:forEach items="${myAttend }" var="attend">
-				<tr>
-					<td>${attend.hakbun }</td>		
-					<td>${attend.name }</td>		
-					<td>${attend.className}</td>		
-					<td>${attend.rate }</td>	
-				</tr>
-			</c:forEach>
-		</table>
 		
 		<div id="myBox">
 			<div id="img">
 				<img id="box1" alt="" src="img/att1.png">
 				<img alt="" src="img/att0.png">
 				<img alt="" src="img/att2.png">
+				<img id="rate" alt="" src="img/percent.png">
 			</div>
 			<div>
 			<c:forEach items="${myAttend }" var="attend">
 				<span style ="font-size:2em;font-weight: bold ;">${attend.checkDay }</span>
 				<span style ="font-size:2em;font-weight: bold ;">${attend.missDay }</span>
 				<span style ="font-size:2em;font-weight: bold ;">${attend.tardy }</span>
+				<span style ="font-size:2em;font-weight: bold ;">${attend.rate }</span>
 			</c:forEach>
 			</div>
 		</div>

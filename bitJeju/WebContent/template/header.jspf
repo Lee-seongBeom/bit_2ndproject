@@ -78,7 +78,7 @@
 				
 						<li>취업지원센터
 							<ol>
-								<a href="stuEmploy.jb">학생 취업 현황</a>
+								<a href="stuEmployList.jb">학생 취업 현황</a>
 							</ol>
 							<ol>
 								<a href="jobNoticeList.jb">채용 공고</a>

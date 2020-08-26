@@ -37,6 +37,6 @@ public class StuEmployWriteController extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		resp.sendRedirect("stuEmploy.jb");
+		resp.sendRedirect("stuEmployList.jb");
 	}
 }

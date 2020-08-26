@@ -7,4 +7,11 @@ create table attendance(
 	nalja date,
 	stuCheck varchar2(9) default '-'
 );
+insert into attendance (hakbun, stuCheck) values (1, '결석');
+insert into attendance (hakbun, stuCheck) values (1, '결석');
+insert into attendance (hakbun, stuCheck) values (1, '결석');
+insert into attendance (hakbun, stuCheck) values (1, '결석');
+insert into attendance (hakbun, stuCheck) values (1, '결석');
+insert into attendance (hakbun, stuCheck) values (1, '결석');
+insert into attendance (hakbun, stuCheck) values (1, '결석');
 commit

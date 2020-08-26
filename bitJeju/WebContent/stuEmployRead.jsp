@@ -97,7 +97,7 @@
 				<div id="btn">
 				 	<button id="modyfy" type = "button" onclick ="location.href='stuEmployModify.jb?stuEmployNum=${bean.stuEmployNum }'" >수정</button>
 					<button id="delete" type = "button" onclick ="location.href='stuEmployDelete.jb?stuEmployNum=${bean.stuEmployNum }'">삭제</button>
-					<button id="list" type = "button" onclick ="location.href='stuEmploy.jb?'">목록</button>
+					<button id="list" type = "button" onclick ="location.href='stuEmployList.jb?'">목록</button>
 				</div>
 		<!-- content end -->
 	</div>

@@ -31,7 +31,6 @@ public class NoticeWriteController extends HttpServlet {
 		String title = req.getParameter("title");
 		String contents = req.getParameter("contents");
 		
-		System.out.println(title+contents);
 		NoticeDto noticeDto = new NoticeDto();
 		noticeDto.setTitle(title);
 		noticeDto.setContents(contents);

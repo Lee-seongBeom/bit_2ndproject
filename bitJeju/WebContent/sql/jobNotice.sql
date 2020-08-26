@@ -10,7 +10,5 @@ CREATE TABLE jobNotice(
     contents     VARCHAR2(3000)	NOT NULL
 );
 insert into jobNotice (jobNoticeNum,title,company,endDay, contents) values (jobNotice_seq.nextval, '한라 소프트웨어 구인공고', '한라 소프트웨어', TO_DATE('2020-08-02', 'RRRR-MM-DD'),'안녕하세요. 한라 소프트에서 자바 백엔드 개발자를 구합니다. 이메일 hanla@hansoft.com으로 이력서 보내주세요');
---insert into jobNotice values (jobNotice_seq.nextval,'채용팀', '제주 소프트웨어 구인공고', '제주 소프트웨어', TO_DATE('2020-08-02', 'RRRR-MM-DD'),'안녕하세요. 한라 소프트에서 자바 백엔드 개발자를 구합니다. 이메일 hanla@hansoft.com으로 이력서 보내주세요');
---insert into jobNotice values (jobNotice_seq.nextval,'채용팀', '감귤 소프트웨어 구인공고', '감귤 소프트웨어', TO_DATE('2020-08-02', 'RRRR-MM-DD'),'안녕하세요. 한라 소프트에서 자바 백엔드 개발자를 구합니다. 이메일 hanla@hansoft.com으로 이력서 보내주세요', '채용01');
 select * from jobNotice;
 commit

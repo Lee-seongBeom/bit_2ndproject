@@ -13,6 +13,3 @@ insert into notice (noticeNum,title,writedDate,cnt,contents) values (notice_seq.
 select * from notice;
 commit
 
---update notice set cnt=cnt+1 where noticeNum=1;
---select * from notice where noticeNum = 1;
---select * from notice where noticeNum = 1;

@@ -79,12 +79,12 @@
 			 	제목<input type="text" name="title" />
 			</div>
 			<div id="area">
-				<textarea name="contents" class="contents">${notice.contents }</textarea>
+				<textarea name="contents" class="contents"></textarea>
 			</div>
 			<div id="btn">	
 				<button class="button" type="submit">작성</button>
 				<button class="button" type="reset">지우기</button>
-				<button class="button" onclick="location.href='noticeList.jb'">목록</button>
+				<button class="button" onclick="location.href='stuEmployList.jb'">목록</button>
 			</div>
 			</form>
 		<!-- content end -->

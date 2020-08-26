@@ -37,13 +37,14 @@ public class NoticeListController extends HttpServlet {
 		try {
 			dao = new Dao();
 			pagingDao = new PagingDao();
-			int postCnt = pagingDao.getCount();
+			String bbsTable = "notice";
+			int postCnt = pagingDao.getCount(bbsTable);
 			System.out.println(postCnt + "postCnt");
 			list = dao.noticeSelectAll(postCnt , pgNum);
 			if(action == null){
 				System.out.println("공지사항 모든 게시글을 표시합니다.");
 				request.setAttribute("noticeList", list);
-				count = pagingDao.getCount();
+				count = pagingDao.getCount(bbsTable);
 			}else if(action != null){
 				System.out.println("엑션 타입이 널이 아닙니다 검색을 진행합니다.");
 				String searchType = request.getParameter("searchType");
@@ -53,12 +54,13 @@ public class NoticeListController extends HttpServlet {
 				list = pagingDao.search(keyWord, searchType, curPage);
 				System.out.println("공지사항 중 필터된 게시글을 표시합니다.");
 				request.setAttribute("noticeList", list);
-				count = pagingDao.getCount(keyWord, searchType);
+				count = pagingDao.getCount(keyWord, searchType, bbsTable);
 				linkStr = "&searchType="+searchType+"&keyWord="+keyWord;
 			}
 			
 			pagingDao = new PagingDao();
-			request.setAttribute("pagelist", new PagingDao().getPageLinkList(pgNum, linkStr, count));
+			String bbsListLink = "noticeList.jb";
+			request.setAttribute("pagelist", new PagingDao().getPageLinkList(pgNum, linkStr, count, bbsListLink));
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
